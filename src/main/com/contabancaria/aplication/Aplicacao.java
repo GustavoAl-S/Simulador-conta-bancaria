@@ -1,4 +1,4 @@
-package main.com.contabancaria.application;
+package main.com.contabancaria.aplication;
 
 import main.com.contabancaria.entities.Cliente;
 import main.com.contabancaria.entities.Conta;

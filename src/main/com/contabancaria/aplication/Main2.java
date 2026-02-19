@@ -1,8 +1,8 @@
-package main.com.contabancaria.application;
+package main.com.contabancaria.aplication;
 
 import main.com.contabancaria.entities.*;
-import main.com.contabancaria.usescases.TransacaoService;
-import main.com.contabancaria.usescases.TransacaoRepository;
+import main.com.contabancaria.usecases.TransacaoService;
+import main.com.contabancaria.infrastructure.TransacaoRepositoryMemory;
 
 public class Main2 {
     public static void main(String[] args) {
@@ -14,7 +14,8 @@ public class Main2 {
         Conta c2 = new ContaCorrente(cliente1, 0);
         int valor = 1000;
 
-        TransacaoRepository repository = new TransacaoRepository();
+        ITransacaoRepository repository = new TransacaoRepositoryMemory();
+
         TransacaoService transferencia = new TransacaoService(repository);
 
         transferencia.transferir(c1, c2, valor);

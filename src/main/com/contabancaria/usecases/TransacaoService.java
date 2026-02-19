@@ -1,14 +1,13 @@
-package main.com.contabancaria.usescases;
+package main.com.contabancaria.usecases;
 
 import main.com.contabancaria.entities.*;
-
 import java.time.LocalDateTime;
 
 public class TransacaoService {
 
-    private TransacaoRepository transacaoRepository;
+    private ITransacaoRepository transacaoRepository;
 
-    public TransacaoService(TransacaoRepository transacaoRepository){
+    public TransacaoService(ITransacaoRepository transacaoRepository){
         this.transacaoRepository = transacaoRepository;
     }
 
