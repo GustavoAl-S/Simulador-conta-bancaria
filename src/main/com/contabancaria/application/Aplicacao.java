@@ -1,13 +1,11 @@
-package Main;
+package main.com.contabancaria.application;
 
-import Models.Cliente;
-import Models.Conta;
-import Models.ContaCorrente;
-import Models.ContaPoupanca;
+import main.com.contabancaria.entities.Cliente;
+import main.com.contabancaria.entities.Conta;
+import main.com.contabancaria.entities.ContaCorrente;
+import main.com.contabancaria.entities.ContaPoupanca;
 
 import java.util.Scanner;
-
-
 
 public class Aplicacao {
     public static class Main {
@@ -90,7 +88,7 @@ public class Aplicacao {
                             deposito = sc.nextDouble();
                         }
 
-                        System.out.printf("Deposito realizado! \n Novo saldo = %.2f %n", conta.getSaldo());
+                        System.out.printf("Deposito realizado! \nNovo saldo = %.2f %n", conta.getSaldo());
                         break;
 
                     case 3:

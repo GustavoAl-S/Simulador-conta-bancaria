@@ -1,4 +1,4 @@
-package Models;
+package main.com.contabancaria.entities;
 
 public class Cliente {
 

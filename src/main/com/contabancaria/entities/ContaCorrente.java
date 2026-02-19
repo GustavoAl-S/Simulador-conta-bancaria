@@ -1,6 +1,6 @@
-package Models;
+package main.com.contabancaria.entities;
 
-public class ContaCorrente extends Conta{
+public class ContaCorrente extends Conta {
 
     public ContaCorrente(Cliente cliente, double saldo) {
         super(cliente, saldo);
