@@ -6,7 +6,7 @@ Atualização: O projeto recebeu um "update" e agora está Orientado a Objetos. 
 
 ## Objetivo
 
-O projeto foi desenvolvido como parte de um desafio com foco em praticar:
+O projeto foi desenvolvido com foco em praticar:
 
 - Leitura de dados com `Scanner`
 - Uso de estruturas de repetição e condicionais (`do/while`, `switch`)
@@ -55,15 +55,25 @@ Digite a opção desejada:
 
 ## Estrutura do projeto
 ```
-.
-├── Main/
-│   └── Aplicacao.java      # Classe principal, com o código de execução e interação com o usuário
-├── Models/
-│   ├── Cliente.java        # Classe que representa um cliente
-│   ├── Conta.java          # Classe base para Conta Corrente e Conta Poupança
-│   ├── ContaCorrente.java  # Classe que representa uma conta corrente
-│   └── ContaPoupanca.java  # Classe que representa uma conta poupança
-└── README.md               # Este arquivo
+src
+└── main.com.contabancaria
+    ├── application
+    │   ├── Aplicacao.java
+    │   └── Main2.java
+    │
+    ├── entities
+    │   ├── Cliente.java
+    │   ├── Conta.java
+    │   ├── ContaCorrente.java
+    │   ├── ContaPoupanca.java
+    │   ├── Transacao.java
+    │   └── ITransacaoRepository.java
+    │
+    ├── usecases
+    │   └── TransacaoService.java
+    │
+    └── infrastructure
+        └── TransacaoRepositoryInMemory.java
 ```
 
 ## Tecnologias utilizadas
